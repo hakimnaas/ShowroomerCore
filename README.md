@@ -46,7 +46,8 @@ This application demonstrates how to use the ElephantSQL PostgreSQL Database Ser
   cf create-service elephantsql turtle elephant-sql-service
   ```
 
-1. Copy the value for the service credentials from your ElephantSQL service instance in Bluemix and paste it in the `src/EFCoreToDo/vcap-local.json` file
+1. Copy the value for the service credentials from your ElephantSQL service instance in Bluemix and paste it 
+   in the `src/CoreMVC/vcap-local.json` file
 1. Restore required Nuget packages
 
   ```sh
@@ -64,17 +65,17 @@ This application demonstrates how to use the ElephantSQL PostgreSQL Database Ser
 ## Decomposition Instructions
 
 The primary purpose of this demo is to provide a sample application which uses Entity Framework to connect to the ElephantSQL service in Bluemix.
-Most of the relevant code for this integration is located within the `src/EFCoreToDo/Startup.cs` file.
+Most of the relevant code for this integration is located within the `src/CoreMVC/Startup.cs` file.
 
 ## Troubleshooting
 
 The primary source of debugging information for your Bluemix app is the logs.  To see them, run the following command using the [Cloud Foundry CLI][cloud_foundry]:
 
 ```sh
-cf logs aspnet-core-todo --recent
+cf logs ShowroomerCore --recent
 ```
 
-Replace `aspnet-core-todo` with the actual name of your application in Bluemix.
+Replace `ShowroomerCore` with the actual name of your application in Bluemix.
 
 ## Contribute
 
@@ -83,4 +84,4 @@ We are more than happy to accept external contributions to this project, be it i
 [Getting Started]: https://www.microsoft.com/net/core
 [sign_up]: http://bluemix.net/
 [cloud_foundry]: https://github.com/cloudfoundry/cli
-[repo_issues]: https://github.com/IBM-Bluemix/aspnet-core-todo/issues
+[repo_issues]: https://github.com/hakimnaas/ShowroomerCore/issues
