@@ -1,4 +1,5 @@
-# ASP.NET Core ToDo Sample using PostgreSQL and Entity Framework Core
+# DevStorm Team
+# ASP.NET Core ShowroomerCore using PostgreSQL and Entity Framework Core
 
 This application demonstrates how to use the ElephantSQL PostgreSQL Database Service in an ASP.NET Core application running on Bluemix.
 
@@ -20,7 +21,7 @@ This application demonstrates how to use the ElephantSQL PostgreSQL Database Ser
 
 1. Create the ElephantSQL service instance in Bluemix
   ```sh
-  cf create-service elephantsql turtle elephant-sql-service
+  cf create-service elephantsql turtle Showroomer-ElephantSQL
   ```
 
 1. Push the app to Bluemix
@@ -35,7 +36,7 @@ This application demonstrates how to use the ElephantSQL PostgreSQL Database Ser
 1. Clone the app to your local environment from your terminal using the following command:
 
   ```sh
-  git clone https://github.com/IBM-Bluemix/aspnet-core-todo.git
+  git clone https://github.com/hakimnaas/ShowroomerCore.git
   ```
 
 1. `cd` into the newly created directory
@@ -55,7 +56,7 @@ This application demonstrates how to use the ElephantSQL PostgreSQL Database Ser
 1. Run the application
 
   ```sh
-  dotnet run -p src/EFCoreToDo
+  dotnet run -p src/CoreMVC
   ```
 
 1. Access the running app in a browser at [http://localhost:5000](http://localhost:5000)
