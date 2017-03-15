@@ -1,0 +1,12 @@
+declared-services:
+  Showroomer-ElephantSQL:
+    label: elephantsql
+    plan: turtle
+applications:
+- name: ShowroomerCore
+  random-route: true
+  memory: 512M
+  services:
+  - Showroomer-ElephantSQL
+  env:
+    DOTNET_CLI_TELEMETRY_OPTOUT: 1
